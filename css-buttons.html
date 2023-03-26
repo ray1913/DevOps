@@ -1,0 +1,88 @@
+<style>
+  .subscribe-button {
+    padding-top: 7px;
+    padding-bottom: 7px; /*Space inside an element is called padding*/
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: white;
+    background-color: rgb(190, 12, 12);
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-right: 10px; /*space outside an element*/
+    transition: opacity 0.15s box-shadow 0.15s; /*  makes the element transition smoothly when we hover*/
+    
+  }
+
+  .subscribe-button:hover {
+    opacity: 0.8; /*how see through this element will be when we hover*/
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.15); 
+  }
+
+  .subscribe-button:active {
+    opacity: 0.7;
+  }
+
+  .join-button {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(27, 116, 228);
+    border-style: solid;
+    color:rgb(27, 116, 228);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 2px; /* alter pointed corners of this element*/
+    transition: background-color 0.15s;
+  }
+
+  .join-button:hover {
+    background-color:rgb(27, 116, 228);
+    color:  rgb(255, 255, 255);
+  }
+
+  .join-button:active {
+    opacity: 0.8;
+  }
+
+  .tweet-button {
+    background-color:rgb(55, 137, 236);
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 10px;
+    font-weight: bold;
+    border: none;
+    font-size: 13px;
+    padding-left: 14px;
+    padding-right: 14px;
+   border-radius: 100px; 
+   cursor: pointer;
+   transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    opacity: 0.7;
+    box-shadow: 5px 5px 10px  rgb(0, 0, 0, 0.15);
+  }
+
+  .tweet-button:active {
+    opacity: 0.8;
+  }
+</style>
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
