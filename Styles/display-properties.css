@@ -1,0 +1,15 @@
+body {
+  font-family: Arial;
+}
+
+.customer-support-text {
+  width: 170px; 
+  /*The lower the width, the more the text breaks to the next line*/
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+button {
+  vertical-align: middle;
+}
