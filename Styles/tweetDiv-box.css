@@ -1,0 +1,50 @@
+div {
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  width: 400px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+
+img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+
+input {
+  vertical-align: middle;
+  border: none;
+  font-size: 14px;
+  margin-left: 8px;
+  font-family: 'Roboto', Arial;
+  outline: none;
+}
+
+button {
+  background-color: rgb(108, 153, 235);
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Roboto', Arial;
+  margin-left: 100px;
+  vertical-align: middle;
+}
+
+button:active {
+  opacity: 0.5;
+}
