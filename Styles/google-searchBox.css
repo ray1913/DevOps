@@ -1,0 +1,18 @@
+p {
+  text-align: center;
+}
+
+input {
+  font-size: 11px;
+ 
+  width: 440px;
+  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-color: rgb(196, 191, 191);
+  border-style: solid;
+  border-radius: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none; /*no default outline when users type in search queries*/
+}
