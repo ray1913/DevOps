@@ -1,0 +1,69 @@
+body {
+  font-family: Roboto, Arial;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.name, 
+.mutual-friends {
+  margin-bottom: 3px;
+}
+
+.profile {
+  width: 150px;
+  height: 320px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.profile-image {
+  width: 150px;
+  margin-bottom: 3px;
+}
+
+
+.name {
+  font-weight: 500;
+}
+
+button {
+  background-color: rgb(44, 101, 206);
+  color: white;
+  font-family: 'Roboto', Arial;
+  font-size: 14px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.name,
+.mutual-friends {
+  padding-left: 3px;
+}
+
+.mutual-friends {
+  color: rgb(112, 106, 106);
+}
+
+button:hover {
+  opacity: 0.90;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
