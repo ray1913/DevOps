@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox Practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    .parent {
+      display: flex;
+      height: 50px;
+    }
+
+    .void {
+      width: 100px;
+      background-color: lightpink;
+    }
+
+    .wrapper {
+      background-color: lightblue;
+    }
+
+    .two {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content {
+      color: white;
+      background-color: black;
+    }
+
+   </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="void"></div>
+      <div class="wrapper"> <!--(child item): inside a flex but not nested -->
+          <div>
+            row1  <!--grand-child: not affected by parent unless we nest it by making 'wrapper a flex'-->
+          </div>
+          <div class="two"> <!--- (child item): nested so as to apply the 'justify-content' property to the items in it i.e(grandkids of 'parent')'-->
+          <div class="content">
+            row2
+          </div>
+          <div class="content">
+            row2
+          </div>
+          </div>
+        </div> 
+      </div> 
+    </div>
+  </body>
+</html>
+
+<!-- Nested flex:  first, create a  parent flex with two items, set a width to 'void-div' & 'div .two',(set a background color for void-div), 
+wrap the second row in a container(don't nest: i.e make it a flex),set a background-color, nest div '.two' housing the "row2(s) contents".
+
+Note: Flex-box doesn't go down two levels, i.e only affects it's direct children, grandkids are unaffected until we nest the direct children.-->
