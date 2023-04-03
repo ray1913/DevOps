@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .section {  /* parent container*/
+        display: flex;
+        height: 60px;
+      }
+
+      .left-section {
+        background-color: lightblue;
+        width: 100px;
+        margin-right: 20px; 
+        flex-shrink: 0; /* no matter what happens, keep this element's width of 100px and don't shrink this element nor any
+        item(s) inside it when page is resized to a smaller size*/
+      }
+
+
+     
+      button {
+        height: 30px;
+        width: 40px;
+      }
+
+      img {
+        height: 25px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .middle-section { /*direct flexible child,  but set to a nested flex so i can align the grandchildren inside it,
+        since flexbox parent(container) doesnt affect it's grandchildren: input and buttons, and others that will be written inside the sections*/
+        display: flex;
+        align-items: center;
+        max-width: 400px;
+        background-color: lightpink;
+        flex: 1; /*stretch this element to take up the remaining space, will also make this element 
+        resize with the page*/
+      }
+
+      input {   
+       height: 25px; /* grandchild of 'container' and child of the 'middle-section' */
+
+       flex: 1; /* stretches this element to the 'horizontal end' of it's parent(middle-section) flex container: set to (max-width:400px).
+                so it's gon push it's colleagues(buttons) to the far end of (middle-section), which is now a "nested flex."*/
+
+       width: 0; /*remove the default width of this element and shrink it as much as it can when page is resized to a smaller size.
+       
+          If this default is not removed and we resize the page into a smaller size from right to left, the items inside the 'right section'
+          will begin to shrink when we get to 'that default width' of the search-bar*/
+
+       margin-right: -1px;
+      }
+
+      .right-section {
+        background-color: purple;
+        margin-left: 20px;
+        width: 150px;
+        flex-shrink: 0;  /* keeps the width of this section and will not shrink when page is resized to a smaller size*/
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+    
+
+      .mic-icon {
+        height: 15px;
+        width: 15px;
+      }
+
+   
+    </style>
+  </head>
+  <body>
+    <div class="section"> <!---parent-->
+      <div class="left-section">left-section</div> <!---child-->
+      <div class="middle-section">
+        <input type="text" placeholder="search-box"> <!---grand-child-->
+        <button>
+          <img src="images/photo-1583337130417-3346a1be7dee.jpeg"> <!---grand-child-->
+        </button>
+        <button>
+          <img src="images/nima-sarram-4Fl_2hTfmtc-unsplash.jpg"
+        </button>
+      </div>
+      <div class="right-section"> <!---child-->
+     
+          <img class="mic-icon" src="icons/Google-Mic-Icon.svg">
+          <img class="mic-icon" src="icons/Google-Mic-Icon.svg"> <!---Grand-children of the flexible-parent: 'container'-->
+          <img class="mic-icon" src="icons/Google-Mic-Icon.svg">
+      </div>
+    </div>
+  </body>
+</html>
